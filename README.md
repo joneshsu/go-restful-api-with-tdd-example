@@ -4,22 +4,22 @@ In this practice we will learn how to build and test a simple REST API in Go usi
 and MySQL database. We will also create the application following the test-driven development (TDD)
 methodology.
 
-##### Goals
+### Goals
 
  * Become familiar with the TDD methodology.
  * Become familiar with the Gorilla Mux package.
  * Learn how to use MySQL in Go.
  
-##### Prerequisites
+### Prerequisites
 
  * Must have a working Go and MySQL environment.
  
-##### About the Application
+### About the Application
 
 The application is a simple REST API server that will provide endpoints to allow accessing and manipulating 
 'users'.
 
-##### API Specification
+### API Specification
 
  * Create a new user in response to a valid POST request at `/users`,
  * Update a user in response to a valid PUT request at `/users/{id}`,
@@ -29,11 +29,11 @@ The application is a simple REST API server that will provide endpoints to allow
  
 The `{id}` will determine which user the request will work with.
 
-#### Setup MySQL Environment
+### Setup MySQL Environment
 
 Please refer to [Install MySQL 8 on ubuntu 18.04](https://github.com/joneshsu/mysql8-ubuntu1804)
 
-#### Creating the Database
+### Creating the Database
 
 As our application is simple, we will create only one table called `users` with following fields:
 
@@ -53,7 +53,7 @@ CREATE TABLE users (
 );
 ```
 
-#### Getting Dependencies
+### Getting Dependencies
 
 Before we start writing our application, we need to get some dependencies that we will use.
 We need to get the two following packages:
@@ -68,7 +68,7 @@ go get github.com/gorilla/mux
 go get github.com/go-sql-driver/mysql
 ```
 
-#### Testing
+### Testing
 
 We can use following command to run all tests:
 
